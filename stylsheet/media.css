@@ -1,0 +1,45 @@
+@media screen and (max-width:599px){
+    p.p_text_head{
+        font-size: 0.9rem;
+    }
+    p.p_text_head_2{
+        font-size: 1.4rem;
+    }
+    h1.h1_text_head{
+        font-size: 1.5rem;
+    }
+    p.text_gheymat_head{
+        font-size: 2rem;
+    }
+    a.footer_box {
+        color: rgb(71, 71, 71);
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    a.footer_box {
+        color: rgb(71, 71, 71);
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:1200px){
+    a.footer_box {
+        color: rgb(71, 71, 71);
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:570px){
+    div.question{
+        height: 35rem !important;
+    
+    }
+}
+@media screen and (max-width:1000px){
+    div.featured_car{
+        height: 70rem;
+    }
+}
+
+/* @media screen and (max-width:1010) */

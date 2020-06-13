@@ -1,0 +1,452 @@
+@font-face{
+    font-family: 'nazanin';
+    src: url('http://cdn.font-store.ir/shahab.css') format('eot'),
+    url('http://cdn.font-store.ir/shahab.css') format('woff'),
+    url('http://cdn.font-store.ir/shahab.css') format('truetype');
+}
+
+i.seeting {
+    font-size: 2em;
+}
+
+/* ////////////////////////////////////////////div//////////////////////////// */
+div.loader {
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+}
+
+
+div.img_header {
+    background: url(../img/headerBcg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1) translateX(3%);
+        display: none;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+header.header {
+    overflow: hidden;
+    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 51% 100%, 0 90%, 0 90%, 0 0);
+}
+
+div.khat_box {
+    background-color: rgb(80, 64, 224);
+    width: 4rem;
+    height: 0.5rem;
+    margin: auto;
+    /* padding: 11px 0px; */
+    margin-top: 12px;
+    margin-bottom: 10px;
+
+}
+
+div.question {
+    background: url(../img/questionBcg.jpeg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 5px;
+    height: 25rem !important;
+    width: 100% !important;
+    margin-top: -33px;
+}
+
+div.div_col_question_1 {
+    background-color: rgba(114, 114, 114, 0.829);
+}
+
+div.div_col_question_2 {
+    background-color: rgba(207, 230, 0, 0.781);
+}
+
+div.featured_car {
+    background-color: #dbdbdb;
+    margin-top: -6px;
+}
+
+div.texts_img_audi {
+    background-color: rgb(230, 227, 227);
+    height: 30%;
+}
+
+div.texts_img_audi:hover {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+div.img_container {
+    overflow: hidden;
+    background-color: greenyellow;
+    width: 100%;
+}
+
+div.img_container:hover img.img_feature {
+    transition: all 2s ease-in-out;
+    opacity: 0.5;
+    transform: scale(1.3);
+}
+
+div.img_container:hover span.icon_search_img_feature {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+    transition: all 2s;
+}
+
+div.div_img_gallery {
+    background-color: rgb(255, 0, 221);
+    transition: all 2s;
+
+}
+
+div.div_img_gallery:hover img.img_gallery {
+    opacity: 0.4;
+    transition: all 2s;
+}
+
+div.div_img_gallery {
+    overflow: hidden;
+    cursor: pointer;
+    outline: 5px solid white;
+    outline-offset: -20rem;
+    transition: all 2s;
+}
+
+div.div_img_gallery:hover {
+    outline-offset: -2rem;
+    transition: all 2s;
+}
+
+div.search_container {
+    background: url(../img/headerBcg_dark.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+div.div_video {
+    position: relative;
+    clip-path: polygon(5% 0, 99% 0%, 95% 100%, 0% 116%);
+    min-height: 35rem;
+}
+
+div.color_video {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left, #008cff, #6f00ff);
+    z-index: -1;
+    object-fit: cover;
+}
+
+div.container_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.div_item_servis {
+    background: -webkit-linear-gradient(left, #000000, #24232396);
+    height: 35%;
+    cursor: pointer;
+    transition: all 1s ease-in-out !important;
+}
+
+div.div_item_servis:hover {
+    background: -webkit-linear-gradient(left, #00d9ff, #91ff00);
+    color: black;
+    border-right: 30px solid rgba(212, 0, 255, 0.63);
+    transition: all 1s ease-in-out !important;
+}
+
+div.div_item_servis:hover .text_items_servis {
+    color: rgb(39, 1, 1);
+    transition: all 1s ease-in-out !important;
+}
+
+div.div_item_servis:hover span.icon_items_servis {
+    color: rgb(212, 0, 255);
+    transition: all 1s ease-in-out !important;
+}
+
+div.div_item_servis:hover .hover_padding {
+    padding-left: 30px !important;
+    transition: all 1s ease-in-out !important;
+
+}
+
+div.hover_padding {
+    transition: all 1s ease-in-out;
+}
+
+div.row_items_servis {
+    transition: all 1s ease-in-out;
+}
+
+div.div_card-img_usser {
+    width: 25%;
+    position: relative;
+    top: 44%;
+    left: 40%;
+    margin-top: -45px;
+}
+
+
+
+/* ////////////////////////////////////////////(***P***)//////////////////////////// */
+p.p_text_head {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-left: 5px solid springgreen;
+}
+
+p.p_text_head_2 {
+    font-size: 1.8rem;
+}
+
+p.text_gheymat_head {
+    font-size: 2.5rem;
+}
+
+p.p_text_zire_header {
+    font-size: 2rem;
+}
+
+h1.h1_blue_zire_header {
+    color: white;
+    font-size: 2rem;
+    background: rgb(76, 219, 255);
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+p.test {
+    font-size: 20px;
+    color: turquoise;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -21px;
+    font-weight: 900;
+}
+
+p.mony_box {
+    background-color: rgb(0, 204, 255);
+    padding: 5px 30px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    color: white;
+    transition: 2s;
+}
+
+p.mony_box:hover {
+    background-color: rgb(153, 0, 255);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: all 2s;
+}
+
+p.text_box_user {
+    color: rgb(190, 189, 189);
+}
+
+p.icon_user {
+    font-size: 3rem;
+    color: rgb(190, 190, 190);
+}
+
+/* ////////////////////////////////////////////(***h1***)//////////////////////////// */
+h1.h1_text_head {
+    font-size: 2.5rem;
+}
+
+/* ////////////////////////////////////////////(***h5***)//////////////////////////// */
+h5.h5_box_entekhab {
+    padding-top: 15px;
+}
+
+/* ////////////////////////////////////////////(***h6***)//////////////////////////// */
+h6.h6_text_featuere {
+    padding: 20px 0px;
+}
+
+/* ////////////////////////////////////////////(***i***)//////////////////////////// */
+i.my_icon {
+    font-size: 1.4rem;
+}
+
+a.icon_search_question:hover {
+    color: rgb(255, 0, 119);
+}
+
+
+/* ////////////////////////////////////////////(***a***)//////////////////////////// */
+a.icon_zire_header{
+    font-size: 3rem;
+    background-color: rgb(119, 0, 255);
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.897);
+}
+
+a.icon_zire_header:hover {
+    color: rgb(255, 255, 255);
+}
+
+a.footer_box {
+    color: rgb(71, 71, 71);
+}
+
+a.footer_box:hover {
+    color: rgb(151, 151, 151);
+    transition: all 1s;
+}
+
+a.icon_search_question {
+    font-size: 5rem;
+}
+
+a.a_text_feature {
+    color: gray;
+}
+
+a.a_text_feature:hover {
+    text-decoration: none;
+}
+
+a.icon_search_img_feature {
+    color: rgb(206, 206, 206);
+    transition: all 1s;
+}
+
+a.icon_search_img_feature:hover {
+    color: rgb(0, 225, 255);
+    transition: all 1s;
+}
+
+
+a.icon_nav {
+    color: yellow;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+a.icon_nav:hover {
+    color: rgb(0, 255, 179);
+}
+
+
+/* ////////////////////////////////////////////(***sapan***)//////////////////////////// */
+span.icon_car_featore {
+    color: rgb(70, 70, 70);
+}
+
+span.icon_car_featore:hover {
+    color: rgb(0, 183, 255);
+    transition: 0.5s;
+}
+
+span.icon_search_img_feature {
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 2s;
+}
+
+span.icon_items_servis {
+    font-size: 3rem;
+    color: rgb(0, 255, 157);
+    transition: all 1s ease-in-out;
+}
+
+/* ////////////////////////////////////////////(***img***)//////////////////////////// */
+img.img_feature {
+    transition: all 2s;
+}
+
+img.img_gallery {
+    transition: all 2s;
+}
+
+img.img_gallery:hover {
+    transform: scale(1.4) translatex(2rem);
+}
+
+img.img_user {
+    border: 5px solid white;
+    border-radius: 50px;
+    /* margin-top: -23%;
+    margin-left: 36%; */
+}
+
+
+/* ////////////////////////////////////////////(***input***)//////////////////////////// */
+input.input_search {
+    border: 1px solid gold;
+    background-color: rgba(61, 15, 15, 0);
+    color: greenyellow !important;
+}
+
+input.input_search::placeholder {
+    color: rgb(129, 110, 0);
+}
+
+input.input_search:focus {
+    background-color: rgba(128, 128, 128, 0);
+    border: 2px solid rgb(200, 255, 0);
+}
+
+/* ////////////////////////////////////////////(***button***)//////////////////////////// */
+button.btn_search {
+    background-color: rgba(0, 0, 255, 0);
+    border: 1px solid gold;
+    color: white;
+    transition: all 1s;
+}
+
+button.btn_search:hover {
+    background-color: gold;
+    transition: all 1s;
+}
+
+/* ////////////////////////////////////////////(***video***)//////////////////////////// */
+video.video {
+    width: 99%;
+    min-height: 35rem;
+    opacity: 0.3;
+    object-fit: cover;
+}
+
+/* ////////////////////////////////////////////(***motefareghes***)//////////////////////////// */
+.text_items_servis {
+    color: rgb(189, 189, 189);
+    transition: all 1s ease-in-out;
+}
